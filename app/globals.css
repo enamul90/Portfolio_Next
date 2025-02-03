@@ -2,20 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+
+
+
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: white;
+  background: #34353A;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.HeroBG{
+  background: linear-gradient(90deg, #34353A 0.22%, #49443F 99.82%);
+}
+
+.companyBG{
+  background: #3D3E42;
+}
+.background{
+  background-color: #FBC76A;
+}
+.companyText{
+  color: #FBC76A;
+}
+.boxShadow{
+  box-shadow: rgba(251, 199, 106, 0.18) 1px 1px 20px;
+}
+.borderColor{
+  border-color: rgb(251, 199, 106);
 }
