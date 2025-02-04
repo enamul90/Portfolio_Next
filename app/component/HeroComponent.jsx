@@ -37,10 +37,10 @@ const HeroComponent = () => {
                     , sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, </p>
 
                 <div className="mt-6 flex items-center gap-5">
-                    <button className="companyText px-5 py-2 border text-2xl rounded-lg borderColor ">Hire Me</button>
-                    <button className="companyText px-5 py-3 text-3xl rounded-lg boxShadow companyBG  "><FaGit /></button>
-                    <button className="companyText px-5 py-3 text-3xl rounded-lg boxShadow companyBG  "><FaBehance /></button>
-                    <button className="companyText px-5 py-3 text-3xl rounded-lg boxShadow companyBG  "><FaLinkedinIn /></button>
+                    <button className="companyText px-5 py-2 border text-xl rounded-lg borderColor ">Hire Me</button>
+                    <button className="companyText px-5 py-3 text-2xl rounded-lg boxShadow companyBG  "><FaGit /></button>
+                    <button className="companyText px-5 py-3 text-2xl rounded-lg boxShadow companyBG  "><FaBehance /></button>
+                    <button className="companyText px-5 py-3 text-2xl rounded-lg boxShadow companyBG  "><FaLinkedinIn /></button>
                 </div>
             </>
         )
@@ -49,7 +49,7 @@ const HeroComponent = () => {
     const HeroImage = ()=>{
         return(
             <>
-                <Image src={myPhoto} alt="Hero" className=" min-w-full" />
+                <Image src={myPhoto} alt="Hero" className=" min-h-full pt-[50px]" />
             </>
         )
     }
@@ -67,10 +67,9 @@ const HeroComponent = () => {
                     <div className="col-span-4 flex flex-col justify-center">
                         <HeroText/>
                     </div>
-                    <div className="col-span-5 flex items-end ">
+                    <div className="col-span-5 flex items-end justify-center ">
                         <HeroImage/>
                     </div>
-
                 </div>
             </div>
 
