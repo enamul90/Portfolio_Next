@@ -73,7 +73,7 @@ const Profile = () => {
                     </div>
                 </div>
 
-                <div className="mt-4">
+                <div className="mt-4 bg-black">
                     {
                         skills.map((skill, i)=>{
                             return (
