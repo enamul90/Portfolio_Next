@@ -28,7 +28,6 @@ const Profile = () => {
             <>
                 <div>
                     <h1 className="text-2xl">Personal Details</h1>
-
                 </div>
 
             </>
