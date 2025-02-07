@@ -1,45 +1,76 @@
+"use client"
 import React from 'react';
 import {MdOutgoingMail} from "react-icons/md";
 import {FaTelegramPlane, FaWhatsapp} from "react-icons/fa";
 import {PiSkypeLogoBold} from "react-icons/pi";
 
 const Profile = () => {
+    const [active, setActive] = React.useState("code");
 
     const DesignSkills = [
         {
             "tools": "Fimga",
-            "availity": "90%"
+            "availity": "90%",
+            "class": "w-[90%]",
         },
         {
             "tools": "Adobe XD",
-            "availity": "85%"
+            "availity": "85%",
+            "class": "w-[85%]",
         },
         {
             "tools": "Adobe illustrator",
-            "availity": "80%"
+            "availity": "80%",
+            "class": "w-[80%]",
         },
         {
             "tools": "Adobe Photoshop",
-            "availity": "70%"
+            "availity": "70%",
+            "class": "w-[70%]",
+        },
+        {
+            "tools": "Miro",
+            "availity": "70%",
+            "class": "w-[70%]",
+        },
+        {
+            "tools": "Google Form",
+            "availity": "70%",
+            "class": "w-[70%]",
         },
     ]
 
     const DevSkills = [
         {
-            "tools": "Fimga",
-            "availity": "90%"
+            "tools": "HTML 5",
+            "availity": "90%",
+            "class": "w-[90%]"
         },
         {
-            "tools": "Adobe XD",
-            "availity": "85%"
+            "tools": "CSS 3",
+            "availity": "85%",
+            "class": "w-[85%]",
+
         },
         {
-            "tools": "Adobe illustrator",
-            "availity": "80%"
+            "tools": "Javascript ES6",
+            "availity": "80%",
+            "class": "w-[80%]"
         },
         {
-            "tools": "Adobe Photoshop",
-            "availity": "70%"
+            "tools": "Node js",
+            "availity": "70%",
+            "class": "w-[70%]"
+        },
+        {
+            "tools": "React js",
+            "availity": "70%",
+            "class": "w-[70%]"
+        },
+        {
+            "tools": "Next js",
+            "availity": "70%",
+            "class": "w-[70%]"
         },
     ]
 
@@ -52,47 +83,79 @@ const Profile = () => {
                     Web User Interface and Mobile App User Interfaces. Already I have experience working with some companies and teams.
                 </p>
                 <div className="mt-5 flex flex-row gap-4">
-                    <button className="text-white p-2  text-2xl rounded-lg boxShadow "><MdOutgoingMail /></button>
-                    <button className="text-white p-2  text-2xl rounded-lg boxShadow "><FaWhatsapp /></button>
-                    <button className="text-white p-2  text-2xl rounded-lg boxShadow "><FaTelegramPlane /></button>
-                    <button className="text-white p-2  text-2xl rounded-lg boxShadow "><PiSkypeLogoBold /></button>
+                    <button className="text-white p-2  text-2xl rounded-lg boxShadow hover:scale-110 transition-transform duration-300"><MdOutgoingMail /></button>
+                    <button className="text-white p-2  text-2xl rounded-lg boxShadow hover:scale-110 transition-transform duration-300"><FaWhatsapp /></button>
+                    <button className="text-white p-2  text-2xl rounded-lg boxShadow hover:scale-110 transition-transform duration-300"><FaTelegramPlane /></button>
+                    <button className="text-white p-2  text-2xl rounded-lg boxShadow hover:scale-110 transition-transform duration-300"><PiSkypeLogoBold /></button>
                 </div>
             </>
         )
     }
 
-    const Skills = ({skills,DevSkills})=>{
+
+    const Skills = ({DesSkills,DevSkills})=>{
 
         return (
             <>
-<<<<<<< HEAD
-                <div>
-                    <h1 className="text-2xl">Personal Details</h1>
-=======
+
                 <div className="flex justify-between items-center">
                     <h1 className="text-xl">MY PROFESSIONAL SKILLS</h1>
                     <div className="flex gap-3">
-                        <button className="px-3 py-2 companyBG companyText rounded-md text-lg boxShadow ">Code Skills</button>
-                        <button className="px-3 py-2 background rounded-md text-lg text-neutral-800">Design Skills</button>
-                    </div>
->>>>>>> df402b56bb5e9a324e8fa584138e827fef577e02
-                </div>
+                        <button
+                            onClick={() => {
+                                setActive("code")
+                            }
+                            }
+                            className={active === "code" ? "px-3 py-2 background rounded-md text-base text-neutral-800 hover:scale-105 transition-transform duration-300" :
+                                "hover:scale-105 transition-transform px-3 py-2 companyBG companyText rounded-md text-base boxShadow duration-300 "}
+                        >
+                            Code Skills
+                        </button>
+                        <button
+                            onClick={() => {
+                                setActive("design")
+                            }
+                            }
+                            className={active === "design" ? "hover:scale-105 transition-transform px-3 py-2 background rounded-md text-base text-neutral-800 duration-300" :
+                                "hover:scale-105 transition-transform px-3 py-2 companyBG companyText rounded-md text-base boxShadow duration-300 "}
 
-                <div className="mt-4 bg-black">
+                        >
+                            Design Skills
+                        </button>
+                    </div>
+                </div>
+                <div className="mt-3 grid grid-cols-2 gap-x-3 ">
+
                     {
-                        skills.map((skill, i)=>{
-                            return (
-                                <div className="mb-2" key={i}>
-                                    <div className="flex justify-between">
-                                        <h6 className="text-sm">{skill.tools}</h6>
-                                        <h6 className="text-sm">{skill.availity}</h6>
+                        active === "code" ? (
+                            DevSkills.map((skill, i) => {
+                                return (
+                                    <div className="py-2 col-span-1 " key={i}>
+                                        <div className="flex justify-between">
+                                            <h6 className="text-sm">{skill.tools}</h6>
+                                            <h6 className="text-sm">{skill.availity}</h6>
+                                        </div>
+                                        <div className="h-1 w-full bg-orange-100  rounded-full">
+                                            <div className={`h-1  background mt-2 rounded-full ${skill.class}`}></div>
+                                        </div>
                                     </div>
-                                    <div className="h-1 w-full bg-orange-100 mt-2 rounded-full">
-                                        <div className="h-1 w-9 background mt-2 rounded-full"></div>
+                                )
+                            })
+                        ) : (
+                            DesSkills.map((skill, i) => {
+                                return (
+                                    <div className="py-2 col-span-1" key={i}>
+                                        <div className="flex justify-between">
+                                            <h6 className="text-sm">{skill.tools}</h6>
+                                            <h6 className="text-sm">{skill.availity}</h6>
+                                        </div>
+                                        <div className="h-1 w-full bg-orange-100  rounded-full">
+                                            <div className={`h-1  background mt-2 rounded-full ${skill.class}`}></div>
+                                        </div>
                                     </div>
-                                </div>
-                            )
-                        })
+                                )
+                            })
+                        )
                     }
 
                 </div>
@@ -102,14 +165,14 @@ const Profile = () => {
 
 
     return (
-        <div className="grid grid-cols-7 gap-10 relative z-10 max-w-[1400px] rounded-2xl mx-auto
-        p-6 companyBG border borderColor mt-[-100px]
+        <div className="grid grid-cols-8  relative z-10 max-w-[1400px] rounded-2xl mx-auto
+        p-6  companyBG border borderColor mt-[-130px] gap-20
         ">
             <div className="col-span-3 ">
                 <PersonalDetails/>
             </div>
-            <div className="col-span-4 ">
-                <Skills skills={DesignSkills} DevSkills={DevSkills} />
+            <div className="col-span-5 ">
+                <Skills DesSkills={DesignSkills} DevSkills={DevSkills}/>
             </div>
         </div>
     );

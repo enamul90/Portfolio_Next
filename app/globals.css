@@ -26,6 +26,9 @@ body {
 .boxShadow{
   box-shadow: rgba(251, 199, 106, 0.18) 1px 1px 20px;
 }
+.cardShadow:hover{
+  box-shadow: rgba(251, 199, 106, 0.73) 1px 1px 20px;
+}
 .borderColor{
   border-color: rgb(251, 199, 106);
 }
