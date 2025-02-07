@@ -94,10 +94,8 @@ const Profile = () => {
 
 
     const Skills = ({DesSkills,DevSkills})=>{
-
         return (
             <>
-
                 <div className="flex justify-between items-center">
                     <h1 className="text-xl">MY PROFESSIONAL SKILLS</h1>
                     <div className="flex gap-3">
@@ -166,7 +164,7 @@ const Profile = () => {
 
     return (
         <div className="grid grid-cols-8  relative z-10 max-w-[1400px] rounded-2xl mx-auto
-        p-6  companyBG border borderColor mt-[-130px] gap-20
+        p-6  companyBG border borderColor mt-[-100px] gap-20
         ">
             <div className="col-span-3 ">
                 <PersonalDetails/>

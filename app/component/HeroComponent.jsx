@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Image from 'next/image'
 import Pattern from  "@/public/images/BgPattarn.png"
@@ -11,7 +12,7 @@ const HeroComponent = () => {
             <div className="h-full w-full absolute top-0 left-0  HeroBG ">
                 <div className="h-[150px] w-[150px] background rounded-full blur-[150px]"></div>
                 <div className="h-[150px] w-[150px] background rounded-full blur-[150px] absolute bottom-[-100px] right-0"></div>
-                <Image src={Pattern} alt="Hero" className="h-full w-full"/>
+                <Image src={Pattern} alt="Hero"  className="absolute top-0 left-0 w-full h-full" />
             </div>
         )
     }
@@ -51,7 +52,7 @@ const HeroComponent = () => {
     const HeroImage = ()=>{
         return(
             <div className="flex flex-row items-center justify-center h-full  ">
-                <Image src={myPhoto} quality={100} alt="Hero" className=" w-fit h-[90%] mt-[100px] "  />
+                <Image src={myPhoto} quality={100} alt="Hero" className=" w-fit h-[90%] "  />
             </div>
         )
     }
@@ -61,7 +62,6 @@ const HeroComponent = () => {
     return (
         <div className="h-screen w-screen overflow-hidden ">
             <HeroBG />
-
             <div className="relative z-10 max-w-[1400px] mx-auto h-full ">
                 <Nave />
 

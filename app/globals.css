@@ -32,3 +32,10 @@ body {
 .borderColor{
   border-color: rgb(251, 199, 106);
 }
+
+.summary-box{
+  background-image: url("@/public/images/Summary-Bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
