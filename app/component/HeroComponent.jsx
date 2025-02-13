@@ -51,7 +51,7 @@ const HeroComponent = () => {
 
     const HeroImage = ()=>{
         return(
-            <div className="flex flex-row items-center justify-center h-full  ">
+            <div className="flex flex-row items-center justify-center h-full px-3 ">
                 <Image src={myPhoto} quality={100} alt="Hero" className=" w-fit h-[90%] "  />
             </div>
         )

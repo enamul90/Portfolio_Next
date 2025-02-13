@@ -34,8 +34,19 @@ body {
 }
 
 .summary-box{
-  background-image: url("@/public/images/Summary-Bg.png");
+  background-image: url("../public/images/Summary-Bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }

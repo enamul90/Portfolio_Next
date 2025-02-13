@@ -53,7 +53,7 @@ const Summary = () => {
 
 
     return (
-        <div  className="mt-[100px] summary-box ">
+        <div  className="mt-[100px] summary-box py-10 ">
             <div className="max-w-[1150px] mx-auto py-8 grid grid-cols-3 gap-2 ">
                 <div>
                     <Text />
