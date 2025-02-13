@@ -96,7 +96,7 @@ const ProjectComponent = () => {
                                 </div>
 
                                 <h5
-                                    className="p-4 relative z-20 bg-[#3D3E42]  font-medium text-lg mt-[-16%] w-[90%]
+                                    className="px-4 py-3 relative z-20 bg-[#3D3E42]  font-medium text-lg mt-[-16%] w-[90%]
                                     border-s-8 border-[#FBC76A] cursor-pointer rounded-e-lg
 
                                     ">

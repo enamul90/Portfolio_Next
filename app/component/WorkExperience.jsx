@@ -1,6 +1,30 @@
 import React from 'react';
 
 const WorkExperience = () => {
+
+    const companyList = [
+        {
+            post: "UI UX Designer",
+            timeline: "2018 - Present",
+            tittle : "Freelancing | Fiver",
+            description : [
+                {content : "I have created modern, minimal and responsive web UI"},
+                {content : "As per client demand, I have created attractive, responsive dashboard design"},
+                {content : "And I have designed Many mobile app UI"},
+            ]
+        },
+        {
+            post: "UI UX Designer",
+            timeline: "2018 - Present",
+            tittle : "Freelancing | Fiver",
+            description : [
+                {content : "I have created modern, minimal and responsive web UI"},
+                {content : "As per client demand, I have created attractive, responsive dashboard design"},
+                {content : "And I have designed Many mobile app UI"},
+            ]
+        }
+    ]
+
     const SectionTittle = ()=>{
         return (
             <div className="flex flex-col items-center w-fit mx-auto mt-[150px]">
@@ -15,11 +39,28 @@ const WorkExperience = () => {
         )
     }
 
+    const Experience = ({data}) => {
+        return (
+            <div className="grid grid-cols-2 mt-[60px] max-w-[1150px] mx-auto">
+                {
+                    data.map((item, index) => {
+                        return (
+                            <div key={index}>
+                                lll
+                            </div>
+                        )
+                    })
+                }
+
+            </div>
+        )
+    }
+
 
     return (
         <div>
             <SectionTittle />
-
+            <Experience data={companyList}/>
         </div>
     );
 };
