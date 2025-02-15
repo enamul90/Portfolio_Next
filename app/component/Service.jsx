@@ -101,7 +101,7 @@ const Service = () => {
 
 
     return (
-        <div className="max-w-[1400px] mx-auto">
+        <div className="max-w-[1400px] mx-auto ">
             <SectionTittle/>
             <SectionCard data={CardData}/>
         </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import {IoCheckmarkDone} from "react-icons/io5";
 
 const WorkExperience = () => {
 
@@ -16,7 +17,7 @@ const WorkExperience = () => {
         {
             post: "UI UX Designer",
             timeline: "2018 - Present",
-            tittle : "Freelancing | Fiver",
+            tittle : "LIDI IT | USA",
             description : [
                 {content : "I have created modern, minimal and responsive web UI"},
                 {content : "As per client demand, I have created attractive, responsive dashboard design"},
@@ -41,12 +42,28 @@ const WorkExperience = () => {
 
     const Experience = ({data}) => {
         return (
-            <div className="grid grid-cols-2 mt-[60px] max-w-[1150px] mx-auto">
+            <div className="relative grid grid-cols-2 gap-5 mt-[60px] max-w-[1100px] mx-auto">
+                <div className="h-[200px] w-[200px] bg-red-400 blur-3xl absolute bottom-[-70px] left-[-70px] opacity-35 "></div>
+                <div className="h-[200px] w-[200px] bg-red-400 blur-3xl absolute top-[-70px] right-[-70px] opacity-35 "></div>
                 {
                     data.map((item, index) => {
                         return (
-                            <div key={index}>
-                                lll
+                            <div className="companyBG rounded-lg p-6" key={index}>
+                                <div className="flex justify-between items-center">
+                                    <h2 className="text-base">{item.post}</h2>
+                                    <h2 className="text-base">{item.timeline}</h2>
+                                </div>
+                                <h1 className="text-3xl font-semibold mt-3 mb-4">{item.tittle}</h1>
+                                {
+                                    item.description.map((item, index) => {
+                                        return (
+                                            <ul key={index} className="opacity-90 mb-1">
+                                                <li className="flex gap-2"><IoCheckmarkDone
+                                                    className="mt-1"/> {item.content}</li>
+                                            </ul>
+                                        )
+                                    })
+                                }
                             </div>
                         )
                     })
@@ -58,8 +75,8 @@ const WorkExperience = () => {
 
 
     return (
-        <div>
-            <SectionTittle />
+        <div className="h-fit">
+            <SectionTittle/>
             <Experience data={companyList}/>
         </div>
     );

@@ -4,20 +4,21 @@ import Service from "@/app/component/Service";
 import Summary from "@/app/component/Summary";
 import ProjectComponent from "@/app/component/ProjectComponent";
 import WorkExperience from "@/app/component/WorkExperience";
+import Footer from "@/app/component/Footer";
 
 
 export default function Home() {
 
 
   return (
-     <div className="overflow-x-hidden ">
+     <div className="overflow-hidden ">
          <HeroComponent />
          <Profile />
          <Service />
          <Summary />
          <ProjectComponent />
          <WorkExperience />
-         <div className="py-52"></div>
+         <Footer />
      </div>
   );
 }
