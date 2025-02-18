@@ -34,18 +34,18 @@ const Summary = () => {
     const MyAward = ({data})=>{
 
         return(
-            <>
+            <div className="flex flex-wrap justify-center lg:justify-end items-center gap-x-10 gap-y-4 mt-4 lg:mt-0 ">
                 {
                     data.map((item,index)=>{
                         return(
                             <div key={index}>
-                                <h1 className="text-5xl font-semibold ">{item.number} </h1>
-                                <p className="text-base mt-1 opacity-80 font-normal ">{item.title}</p>
+                                <h1 className="text-5xl font-semibold  text-center lg:text-start">{item.number} </h1>
+                                <p className="text-base mt-1 opacity-80 font-normal text-center lg:text-start ">{item.title}</p>
                             </div>
                         )
                     })
                 }
-            </>
+            </div>
 
 
         )
@@ -53,12 +53,12 @@ const Summary = () => {
 
 
     return (
-        <div  className="mt-[100px] summary-box py-10 ">
-            <div className="max-w-[1150px] mx-auto py-8 grid grid-cols-3 gap-2 ">
-                <div>
+        <div  className="mt-[100px] summary-box py-10 px-3 lg:px-0 ">
+            <div className="max-w-[1150px] mx-auto py-8 grid lg:grid-cols-3 grid-cols-2 gap-2 ">
+                <div className="col-span-2">
                     <Text />
                 </div>
-                <div className="col-span-2 flex flex-wrap justify-end items-center gap-10">
+                <div className="col-span-2 ">
                     <MyAward data={AwadList} />
                 </div>
             </div>

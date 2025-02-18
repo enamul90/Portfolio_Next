@@ -57,12 +57,12 @@ const Service = () => {
     const SectionTittle = ()=>{
         return (
             <div className="flex flex-col items-center w-fit mx-auto mt-[150px]">
-                <h5 className="text-center text-lg companyText font-semibold">SERVICE </h5>
-                <h2 className="text-2xl text-white font-medium mt-1 ">PROVIDE FOR MY CLIENTS</h2>
+                <h5 className="text-center text-base lg:text-lg companyText font-semibold">SERVICE </h5>
+                <h2 className="text-xl lg:text-2xl text-white font-medium mt-1 ">PROVIDE FOR MY CLIENTS</h2>
                 <div className="flex gap-2 mt-2 w-[70%]">
-                    <span className=" h-[2.5px] rounded-full background block flex-grow "></span>
-                    <span className=" h-[3px] rounded-full background block w-[5px] "></span>
-                    <span className=" h-[3px] rounded-full background block w-[5px] "> </span>
+                    <span className=" h-[2px] lg:h-[2.5px] rounded-full background block flex-grow "></span>
+                    <span className=" h-[2.5px] lg:h-[3px] rounded-full background block w-[5px] "></span>
+                    <span className=" h-[2.5px] lg:h-[3px] rounded-full background block w-[5px] "> </span>
                 </div>
             </div>
         )
@@ -70,7 +70,7 @@ const Service = () => {
 
     const  SectionCard = ({data})=>{
         return (
-            <div className="mt-[60px]  grid grid-cols-3 gap-5 relative">
+            <div className="mt-[35px] lg:mt-[60px]  grid grid-cols-1 lg:grid-cols-3 gap-3 lg:gap-5  relative">
                 <div className="h-[150px] w-[150px] background rounded-full blur-[150px] absolute top-[-10px] left-[-10px]"></div>
                 <div className="h-[150px] w-[150px] background rounded-full blur-[150px] absolute bottom-[-10px] right-[-10px]"></div>
                 <div className="h-[150px] w-[150px] background rounded-full blur-[150px] absolute bottom-[45%] right-[45%] z-[-1] "></div>

@@ -83,10 +83,10 @@ const Profile = () => {
                     Web User Interface and Mobile App User Interfaces. Already I have experience working with some companies and teams.
                 </p>
                 <div className="mt-5 flex flex-row gap-4">
-                    <button className="text-white p-2  text-2xl rounded-lg boxShadow hover:scale-110 transition-transform duration-300"><MdOutgoingMail /></button>
-                    <button className="text-white p-2  text-2xl rounded-lg boxShadow hover:scale-110 transition-transform duration-300"><FaWhatsapp /></button>
-                    <button className="text-white p-2  text-2xl rounded-lg boxShadow hover:scale-110 transition-transform duration-300"><FaTelegramPlane /></button>
-                    <button className="text-white p-2  text-2xl rounded-lg boxShadow hover:scale-110 transition-transform duration-300"><PiSkypeLogoBold /></button>
+                    <button className="text-white p-2  text-xl lg:text-2xl rounded-lg boxShadow hover:scale-110 transition-transform duration-300"><MdOutgoingMail /></button>
+                    <button className="text-white p-2  text-xl lg:text-2xl rounded-lg boxShadow hover:scale-110 transition-transform duration-300"><FaWhatsapp /></button>
+                    <button className="text-white p-2  text-xl lg:text-2xl rounded-lg boxShadow hover:scale-110 transition-transform duration-300"><FaTelegramPlane /></button>
+                    <button className="text-white p-2  text-xl lg:text-2xl rounded-lg boxShadow hover:scale-110 transition-transform duration-300"><PiSkypeLogoBold /></button>
                 </div>
             </>
         )
@@ -96,7 +96,7 @@ const Profile = () => {
     const Skills = ({DesSkills,DevSkills})=>{
         return (
             <>
-                <div className="flex justify-between items-center">
+                <div className="flex flex-col lg:flex-row  justify-between items-center gap-y-3">
                     <h1 className="text-xl">MY PROFESSIONAL SKILLS</h1>
                     <div className="flex gap-3">
                         <button
@@ -104,7 +104,7 @@ const Profile = () => {
                                 setActive("code")
                             }
                             }
-                            className={active === "code" ? "px-3 py-2 background rounded-md text-base text-neutral-800 hover:scale-105 transition-transform duration-300" :
+                            className={active === "code" ? "px-3 py-2 background rounded-md lg:text-base text-sm text-neutral-800 hover:scale-105 transition-transform duration-300" :
                                 "hover:scale-105 transition-transform px-3 py-2 companyBG companyText rounded-md text-base boxShadow duration-300 "}
                         >
                             Code Skills
@@ -114,7 +114,7 @@ const Profile = () => {
                                 setActive("design")
                             }
                             }
-                            className={active === "design" ? "hover:scale-105 transition-transform px-3 py-2 background rounded-md text-base text-neutral-800 duration-300" :
+                            className={active === "design" ? "hover:scale-105 transition-transform px-3 py-2 background rounded-md lg:text-base text-sm text-neutral-800 duration-300" :
                                 "hover:scale-105 transition-transform px-3 py-2 companyBG companyText rounded-md text-base boxShadow duration-300 "}
 
                         >
@@ -122,7 +122,7 @@ const Profile = () => {
                         </button>
                     </div>
                 </div>
-                <div className="mt-3 grid grid-cols-2 gap-x-3 ">
+                <div className="lg:mt-3 mt-5 grid grid-cols-2 gap-x-3 ">
 
                     {
                         active === "code" ? (
@@ -163,10 +163,10 @@ const Profile = () => {
 
 
     return (
-        <div className="grid grid-cols-8  relative z-10 max-w-[1400px] rounded-2xl mx-auto
-        p-6  companyBG border borderColor mt-[-100px] gap-20
+        <div className="grid grid-cols-5  lg:grid-cols-8  relative z-10 max-w-[1400px] rounded-2xl mx-auto
+        lg:p-6 p-4   companyBG border borderColor mt-[-100px] gap-x-20 gap-y-10
         ">
-            <div className="col-span-3 ">
+            <div className="col-span-5 lg:col-span-3 ">
                 <PersonalDetails/>
             </div>
             <div className="col-span-5 ">
