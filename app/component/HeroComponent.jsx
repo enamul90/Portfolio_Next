@@ -17,22 +17,7 @@ const HeroComponent = () => {
         )
     }
 
-    const Nave = ()=>{
-        return (
-            <div className="w-full fixed top-0 left-0  py-3 px-3 companyBG">
-                <div className="flex justify-between items-center max-w-[1400px] mx-auto ">
-                    <h1 className="mt-1 text-2xl lg:text-3xl font-semibold  ">Enamul.</h1>
-                    <button
-                        className="flex w-fit ms-auto  justify-center items-center gap-4 text-white companyText font-semibold px-2  lg:px-5 py-2 rounded-lg border border-[#FBC76A]
-                    hover:scale-105 transition-transform duration-300
-                    ">
-                        <span className="hidden lg:block">Download CV</span>
-                        <FaArrowDown/>
-                    </button>
-                </div>
-            </div>
-        )
-    }
+
     const HeroText = () => {
         return (
             <>
@@ -64,8 +49,7 @@ const HeroComponent = () => {
     return (
         <div className="h-screen w-screen overflow-hidden px-2 lg:px-0 ">
             <HeroBG />
-            <div className="relative z-50 max-w-[1400px] mx-auto h-full ">
-                <Nave />
+            <div className="relative z-10 max-w-[1400px] mx-auto h-full ">
                 <div className="grid grid-cols-4  lg:grid-cols-8 gap-28 h-full">
                     <div className="col-span-4 flex flex-col justify-center">
                         <HeroText/>

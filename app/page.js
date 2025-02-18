@@ -5,6 +5,8 @@ import Summary from "@/app/component/Summary";
 import ProjectComponent from "@/app/component/ProjectComponent";
 import WorkExperience from "@/app/component/WorkExperience";
 import Footer from "@/app/component/Footer";
+import Nave from "@/app/component/Nave";
+
 
 
 export default function Home() {
@@ -12,6 +14,7 @@ export default function Home() {
 
   return (
      <div className="overflow-hidden ">
+         <Nave />
          <HeroComponent />
          <Profile />
          <Service />
