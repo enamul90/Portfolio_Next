@@ -56,8 +56,8 @@ const ProjectComponent = () => {
 
     const SectionTittle = ()=>{
         return (
-            <div className="flex justify-between items-end  mt-[100px] ">
-                <div>
+            <div className="flex flex-col md:flex-row  justify-between items-end  mt-[100px] gap-y-3 ">
+                <div className="me-auto">
                     <h5 className="text-base companyText font-medium flex gap-2 items-center">
                         <span className="block w-[15px] border borderColor"></span>
                         PROJECTS
@@ -65,7 +65,7 @@ const ProjectComponent = () => {
                     <h2 className="text-xl text-white font-medium ">RECENT COMPLETED WORK</h2>
                 </div>
 
-                <div className="flex justify-end items-center gap-3">
+                <div className="flex justify-end items-center gap-3 ">
                     <button
                         onClick={() => scroll("left")}
                         className="h-[32px] w-[32px] border borderColor rounded-md hover:scale-110 transition-transform duration-300 ">
