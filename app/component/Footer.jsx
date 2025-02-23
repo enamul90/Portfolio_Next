@@ -6,10 +6,10 @@ import {TiSocialFacebookCircular} from "react-icons/ti";
 
 const Footer = () => {
     return (
-        <div className="mt-[150px] companyBG py-8">
+        <div className="mt-[100px] lg:mt-[150px] companyBG py-8">
             <div className="max-w-[1400px] mx-auto ">
-                <div className="flex justify-between items-center ">
-                    <h3 className="text-3xl font-semibold">Let’s GET IN <span className="hidden">TOUCE</span>
+                <div className="flex flex-col lg:flex-row gap-4  justify-between items-center ">
+                    <h3 className="text-3xl font-semibold">Let’s GET IN <span className="lg:hidden">TOUCE</span>
                     </h3>
 
                     <div className="flex justify-end gap-5 items-center ">
@@ -24,9 +24,9 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="mt-3 gap-5 flex items-center justify-between">
-                    <h3 className="text-3xl font-semibold">TOUCE  </h3>
-                    <span className="block flex-shrink-1 w-full  border border-[#FBC76A] "></span>
+                <div className="mt-3 gap-5 flex items-center lg:justify-between justify-center">
+                    <h3 className="text-3xl font-semibold hidden lg:inline-block">TOUCE  </h3>
+                    <span className=" flex-shrink-1 w-full  border border-[#FBC76A] hidden lg:inline-block "></span>
                     <div className="py-2 flex items-center gap-4 justify-end">
                         <FaGit className="text-2xl" />
                         <FaBehance className="text-2xl" />

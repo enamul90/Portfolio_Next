@@ -54,8 +54,8 @@ const Summary = () => {
 
     return (
         <div  className="mt-[100px] summary-box py-10 px-3 lg:px-0 ">
-            <div className="max-w-[1150px] mx-auto py-8 grid lg:grid-cols-3 grid-cols-2 gap-2 ">
-                <div className="col-span-2">
+            <div className="max-w-[1150px] mx-auto py-8 grid lg:grid-cols-4 grid-cols-2 gap-6 ">
+                <div className="col-span-2 flex items-center">
                     <Text />
                 </div>
                 <div className="col-span-2 ">

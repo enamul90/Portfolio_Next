@@ -1,9 +1,11 @@
-
+"use client"
 import React from 'react';
 import Image from 'next/image'
 import Pattern from  "@/public/images/BgPattarn.png"
 import myPhoto from  "@/public/images/myphoto.png"
-import {FaArrowDown, FaBehance, FaGit, FaLinkedinIn,} from "react-icons/fa";
+import { FaBehance, FaGit, FaLinkedinIn,} from "react-icons/fa";
+import Link from "next/link";
+
 
 const HeroComponent = () => {
 
@@ -17,7 +19,6 @@ const HeroComponent = () => {
         )
     }
 
-
     const HeroText = () => {
         return (
             <>
@@ -28,19 +29,52 @@ const HeroComponent = () => {
                     , sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, </p>
 
                 <div className="mt-6 flex items-center gap-4  lg:gap-5">
-                    <button className="companyText  px-5 py-2 border text-base lg:text-xl rounded-lg borderColor hover:scale-110 transition-transform duration-300 ">Hire Me</button>
-                    <button className="companyText  px-5 py-3 text-lg lg:text-2xl rounded-lg boxShadow companyBG hover:scale-110 transition-transform duration-300  "><FaGit /></button>
-                    <button className="companyText  px-5 py-3 text-lg lg:text-2xl rounded-lg boxShadow companyBG hover:scale-110 transition-transform duration-300  "><FaBehance /></button>
-                    <button className="companyText  px-5 py-3 text-lg lg:text-2xl rounded-lg boxShadow companyBG hover:scale-110 transition-transform  duration-300 "><FaLinkedinIn /></button>
+                    <Link
+                        href="mailto:mdenamulh1998@gmail.com?subject= &body="
+                        target='_blank'
+                    >
+                        <button
+                            className="companyText  px-5 py-2 border text-base lg:text-xl rounded-lg borderColor hover:scale-110 transition-transform duration-300 "
+                        >
+                            Hire Me
+                        </button>
+                    </Link>
+                    <Link  href="https://github.com/enamul90"
+                          target='_blank'
+                    >
+                        <button
+                            className="companyText  px-5 py-3 text-lg lg:text-2xl rounded-lg boxShadow companyBG hover:scale-110 transition-transform duration-300  "
+                        >
+                            <FaGit/>
+                        </button>
+                    </Link>
+                    <Link href="https://www.behance.net/mdenamulhossen90"
+                          target='_blank'
+                    >
+                        <button
+                            className="companyText  px-5 py-3 text-lg lg:text-2xl rounded-lg boxShadow companyBG hover:scale-110 transition-transform duration-300  "
+                        >
+                            <FaBehance/>
+                        </button>
+                    </Link>
+                    <Link href="https://www.linkedin.com/in/md-enamul-hossen-64ab24296/"
+                          target='_blank'
+                    >
+                        <button
+                            className="companyText  px-5 py-3 text-lg lg:text-2xl rounded-lg boxShadow companyBG hover:scale-110 transition-transform  duration-300 "
+                        >
+                            <FaLinkedinIn/>
+                        </button>
+                    </Link>
                 </div>
             </>
         )
     }
 
-    const HeroImage = ()=>{
-        return(
+    const HeroImage = () => {
+        return (
             <div className="flex flex-row items-center justify-center h-full p-2 ">
-                <Image src={myPhoto} quality={100} alt="Hero" className=" w-fit h-[90%] "  />
+                <Image src={myPhoto} quality={100} alt="Hero" className=" w-fit h-[90%] "/>
             </div>
         )
     }

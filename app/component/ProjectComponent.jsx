@@ -56,7 +56,7 @@ const ProjectComponent = () => {
 
     const SectionTittle = ()=>{
         return (
-            <div className="flex flex-col md:flex-row  justify-between items-end  mt-[100px] gap-y-3 ">
+            <div className="flex flex-col md:flex-row  justify-between items-end  mt-[100px] gap-y-3 px-3 ">
                 <div className="me-auto">
                     <h5 className="text-base companyText font-medium flex gap-2 items-center">
                         <span className="block w-[15px] border borderColor"></span>

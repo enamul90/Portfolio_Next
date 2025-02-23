@@ -3,6 +3,7 @@ import React from 'react';
 import {MdOutgoingMail} from "react-icons/md";
 import {FaTelegramPlane, FaWhatsapp} from "react-icons/fa";
 import {PiSkypeLogoBold} from "react-icons/pi";
+import Link from "next/link";
 
 const Profile = () => {
     const [active, setActive] = React.useState("code");
@@ -63,6 +64,16 @@ const Profile = () => {
             "class": "w-[70%]"
         },
         {
+            "tools": "Express js",
+            "availity": "70%",
+            "class": "w-[70%]"
+        },
+        {
+            "tools": "MongoDB",
+            "availity": "70%",
+            "class": "w-[70%]"
+        },
+        {
             "tools": "React js",
             "availity": "70%",
             "class": "w-[70%]"
@@ -83,21 +94,53 @@ const Profile = () => {
                     Web User Interface and Mobile App User Interfaces. Already I have experience working with some companies and teams.
                 </p>
                 <div className="mt-5 flex flex-row gap-4">
-                    <button className="text-white p-2  text-xl lg:text-2xl rounded-lg boxShadow hover:scale-110 transition-transform duration-300"><MdOutgoingMail /></button>
-                    <button className="text-white p-2  text-xl lg:text-2xl rounded-lg boxShadow hover:scale-110 transition-transform duration-300"><FaWhatsapp /></button>
-                    <button className="text-white p-2  text-xl lg:text-2xl rounded-lg boxShadow hover:scale-110 transition-transform duration-300"><FaTelegramPlane /></button>
-                    <button className="text-white p-2  text-xl lg:text-2xl rounded-lg boxShadow hover:scale-110 transition-transform duration-300"><PiSkypeLogoBold /></button>
+                    <Link href="mailto:mdenamulh1998@gmail.com?subject= &body="
+                          target={"_blank"}
+                    >
+                        <button
+                            className="text-white p-2  text-xl lg:text-2xl rounded-lg boxShadow hover:scale-110 transition-transform duration-300">
+                            <MdOutgoingMail/>
+                        </button>
+                    </Link>
+
+                    <Link href="https://wa.me/+88001722924089?text=Hello%2C%20I%20have%20a%20question%21"
+                          target={"_blank"}
+                    >
+                        <button
+                            className="text-white p-2  text-xl lg:text-2xl rounded-lg boxShadow hover:scale-110 transition-transform duration-300">
+                            <FaWhatsapp/>
+                        </button>
+
+                    </Link>
+                    <Link href="https://t.me/+88001722924089?text=Hello%2C%20I%20have%20a%20question%21"
+                          target={"_blank"}
+                    >
+                        <button
+                            className="text-white p-2  text-xl lg:text-2xl rounded-lg boxShadow hover:scale-110 transition-transform duration-300">
+                            <FaTelegramPlane/>
+                        </button>
+
+                    </Link>
+                    <Link href="https://join.skype.com/invite/s2ERgKMfO6Mq"
+                          target={"_blank"}
+                    >
+                        <button
+                            className="text-white p-2  text-xl lg:text-2xl rounded-lg boxShadow hover:scale-110 transition-transform duration-300">
+                            <PiSkypeLogoBold/>
+                        </button>
+                    </Link>
+
                 </div>
             </>
         )
     }
 
 
-    const Skills = ({DesSkills,DevSkills})=>{
+    const Skills = ({DesSkills, DevSkills}) => {
         return (
             <>
                 <div className="flex flex-col lg:flex-row  justify-between items-center gap-y-3">
-                    <h1 className="text-xl">MY PROFESSIONAL SKILLS</h1>
+                <h1 className="text-xl">MY PROFESSIONAL SKILLS</h1>
                     <div className="flex gap-3">
                         <button
                             onClick={() => {

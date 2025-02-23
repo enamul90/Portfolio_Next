@@ -60,9 +60,13 @@ const WorkExperience = () => {
                                 {
                                     item.description.map((item, index) => {
                                         return (
-                                            <ul key={index} className="opacity-90 mb-1">
-                                                <li className="flex gap-2"><IoCheckmarkDone
-                                                    className="mt-1"/> {item.content}</li>
+                                            <ul key={index} className="opacity-90 mb-1 flex gap-2">
+                                                <li >
+                                                    <IoCheckmarkDone className="text-base mt-1"/>
+                                                </li>
+                                                <li className="flex gap-2">
+                                                    {item.content}
+                                                </li>
                                             </ul>
                                         )
                                     })
