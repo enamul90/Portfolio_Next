@@ -1,5 +1,5 @@
 import {FaArrowDown} from "react-icons/fa";
-import Link from "next/link";
+
 
 const Nave = ()=>{
     return (

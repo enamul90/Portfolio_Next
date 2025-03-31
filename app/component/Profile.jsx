@@ -11,13 +11,13 @@ const Profile = () => {
     const DesignSkills = [
         {
             "tools": "Fimga",
-            "availity": "90%",
-            "class": "w-[90%]",
+            "availity": "95%",
+            "class": "w-[95%]",
         },
         {
             "tools": "Adobe XD",
-            "availity": "85%",
-            "class": "w-[85%]",
+            "availity": "95%",
+            "class": "w-[95%]",
         },
         {
             "tools": "Adobe illustrator",
@@ -31,57 +31,57 @@ const Profile = () => {
         },
         {
             "tools": "Miro",
-            "availity": "70%",
-            "class": "w-[70%]",
+            "availity": "95%",
+            "class": "w-[95%]",
         },
         {
             "tools": "Google Form",
-            "availity": "70%",
-            "class": "w-[70%]",
+            "availity": "99%",
+            "class": "w-[99%]",
         },
     ]
 
     const DevSkills = [
         {
             "tools": "HTML 5",
-            "availity": "90%",
-            "class": "w-[90%]"
+            "availity": "99%",
+            "class": "w-[99%]"
         },
         {
             "tools": "CSS 3",
-            "availity": "85%",
-            "class": "w-[85%]",
+            "availity": "95%",
+            "class": "w-[95%]",
 
         },
         {
             "tools": "Javascript ES6",
-            "availity": "80%",
-            "class": "w-[80%]"
+            "availity": "96%",
+            "class": "w-[96%]"
         },
         {
             "tools": "Node js",
-            "availity": "70%",
-            "class": "w-[70%]"
+            "availity": "95%",
+            "class": "w-[95%]"
         },
         {
             "tools": "Express js",
-            "availity": "70%",
-            "class": "w-[70%]"
+            "availity": "98%",
+            "class": "w-[98%]"
         },
         {
             "tools": "MongoDB",
-            "availity": "70%",
-            "class": "w-[70%]"
+            "availity": "98%",
+            "class": "w-[98%]"
         },
         {
             "tools": "React js",
-            "availity": "70%",
-            "class": "w-[70%]"
+            "availity": "95%",
+            "class": "w-[95%]"
         },
         {
             "tools": "Next js",
-            "availity": "70%",
-            "class": "w-[70%]"
+            "availity": "95%",
+            "class": "w-[95%]"
         },
     ]
 
@@ -90,8 +90,9 @@ const Profile = () => {
             <>
                 <h1 className="text-xl py-2">PERSONAL DETAILS</h1>
                 <p className="mt-2 text-base opacity-95">
-                    Myself MD Enamul Hossen . I'm a Professional Graphic & UX/UI Designer. Generally, I Create Responsive
-                    Web User Interface and Mobile App User Interfaces. Already I have experience working with some companies and teams.
+                    I am MD Enamul Hossen, a JavaScript Developer with expertise in building dynamic web applications. I specialize in React.js, Node.js,
+                    and MongoDB, crafting responsive user interfaces and efficient back-end systems. With experience in RESTful APIs, CRUD operations, and authentication,
+                    I develop scalable and user-friendly solutions, ensuring seamless performance across both web and mobile platforms.
                 </p>
                 <div className="mt-5 flex flex-row gap-4">
                     <Link href="mailto:mdenamulh1998@gmail.com?subject= &body="
@@ -206,10 +207,10 @@ const Profile = () => {
 
 
     return (
-        <div className="grid grid-cols-5  lg:grid-cols-8  relative z-10 max-w-[1400px] rounded-2xl mx-auto
+        <div className="grid grid-cols-5  lg:grid-cols-9  relative z-10 max-w-[1400px] rounded-2xl mx-auto
         lg:p-6 p-4   companyBG border borderColor mt-[-100px] gap-x-20 gap-y-10
         ">
-            <div className="col-span-5 lg:col-span-3 ">
+            <div className="col-span-5 lg:col-span-4 ">
                 <PersonalDetails/>
             </div>
             <div className="col-span-5 ">

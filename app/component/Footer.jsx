@@ -6,7 +6,7 @@ import {TiSocialFacebookCircular} from "react-icons/ti";
 
 const Footer = () => {
     return (
-        <div className="mt-[100px] lg:mt-[150px] companyBG py-8">
+        <div className="mt-[100px] lg:mt-[150px] companyBG py-8 px-3">
             <div className="max-w-[1400px] mx-auto ">
                 <div className="flex flex-col lg:flex-row gap-4  justify-between items-center ">
                     <h3 className="text-3xl font-semibold">Let’s GET IN <span className="lg:hidden">TOUCE</span>

@@ -23,7 +23,7 @@ const Summary = () => {
     const Text = ()=>{
         return(
             <>
-                <p className=" text-lg font-normal leading-[150%] ">
+                <p className=" text-lg font-normal leading-[150%] text-center lg:text-start ">
                     UX research is a systematic and exploratory process that aims to explore users'
                     behaviour, needs, motivations and preferences
                 </p>

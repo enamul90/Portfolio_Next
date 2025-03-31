@@ -9,19 +9,19 @@ const WorkExperience = () => {
             timeline: "2018 - Present",
             tittle : "Freelancing | Fiver",
             description : [
-                {content : "I have created modern, minimal and responsive web UI"},
-                {content : "As per client demand, I have created attractive, responsive dashboard design"},
-                {content : "And I have designed Many mobile app UI"},
+                {content : "E-Commerce UI focuses on creating a user-friendly, responsive design with smooth navigation, appealing product displays, and an optimized checkout experience."},
+                {content : "Food Delivery UI focuses on a user-friendly design with easy navigation, seamless ordering, real-time tracking, and an optimized checkout experience for better user engagement."},
+                {content : "Ride Share UI focuses on a seamless user experience with easy ride booking, real-time tracking, fare estimation, and an intuitive interface for drivers and passengers."},
             ]
         },
         {
-            post: "UI UX Designer",
-            timeline: "2018 - Present",
-            tittle : "LIDI IT | USA",
+            post: "Javascript Developer",
+            timeline: "2020 - Present",
+            tittle : "Project Work | Local Client",
             description : [
-                {content : "I have created modern, minimal and responsive web UI"},
-                {content : "As per client demand, I have created attractive, responsive dashboard design"},
-                {content : "And I have designed Many mobile app UI"},
+                {content : "Social media development with MERN stack involves using MongoDB, Express.js, React.js, and Node.js to create interactive, scalable platforms."},
+                {content : "Develop a patient management system using the MERN stack to handle patient records, appointments, billing, and communication efficiently."},
+                {content : "Figma to HTML service converts Figma designs into responsive, pixel-perfect HTML code, ensuring seamless integration and fast performance."},
             ]
         }
     ]

@@ -19,14 +19,15 @@ const HeroComponent = () => {
         )
     }
 
+
     const HeroText = () => {
         return (
             <>
-                <h3 className="text-lg font-normal companyText">Looking for a Javascript Developer</h3>
-                <h1 className="text-4xl lg:text-7xl font-semibold companyText mt-2">Here I'am Enamul Hossen</h1>
-                <p className="text-white text-sm lg:text-base mt-2 ">Consetetur sadipscing elitr, sed diam nonumy eirmod
-                    tempor invidunt ut labore et dolore magna aliquyam erat
-                    , sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, </p>
+                <h3 className="text-lg font-normal companyText ">Looking for a Javascript Developer</h3>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold companyText mt-2">Here I'am Enamul Hossen</h1>
+                <p className="text-white text-sm lg:text-base mt-2 ">I specialize in JavaScript development, creating dynamic web
+                    applications using React.js and Node.js. Proficient in REST APIs, CRUD operations, and UI/UX design, I deliver efficient, scalable,
+                    and user-friendly solutions. </p>
 
                 <div className="mt-6 flex items-center gap-4  lg:gap-5">
                     <Link
@@ -73,22 +74,22 @@ const HeroComponent = () => {
 
     const HeroImage = () => {
         return (
-            <div className="flex flex-row items-center justify-center h-full p-2 ">
-                <Image src={myPhoto} quality={100} alt="Hero" className=" w-fit h-[90%] "/>
+            <div className="flex items-center justify-center h-full p-2 pt-[100px] animate-fade-in ">
+                <Image src={myPhoto} quality={100} alt="Hero" className="min-h-full w-fit"  />
             </div>
         )
     }
 
 
     return (
-        <div className="h-screen w-screen overflow-hidden px-2 lg:px-0 ">
+        <div className="h-screen w-screen overflow-hidden px-3 ">
             <HeroBG />
-            <div className="relative z-10 max-w-[1400px] mx-auto h-full ">
+            <div className="relative z-10 lg:max-w-[1400px] max-w-[550px] mx-auto h-full ">
                 <div className="grid grid-cols-4  lg:grid-cols-8 gap-28 h-full">
                     <div className="col-span-4 flex flex-col justify-center">
                         <HeroText/>
                     </div>
-                    <div className="col-span-4  items-end justify-center hidden lg:flex ">
+                    <div className="col-span-4   items-end justify-center hidden lg:flex ">
                         <HeroImage/>
                     </div>
                 </div>
