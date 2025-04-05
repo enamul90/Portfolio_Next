@@ -28,10 +28,10 @@ const Footer = () => {
                     <h3 className="text-3xl font-semibold hidden lg:inline-block">TOUCE  </h3>
                     <span className=" flex-shrink-1 w-full  border border-[#FBC76A] hidden lg:inline-block "></span>
                     <div className="py-2 flex items-center gap-4 justify-end">
-                        <FaGit className="text-2xl" />
-                        <FaBehance className="text-2xl" />
-                        <TiSocialFacebookCircular className="text-2xl" />
-                        <FaInstagram className="text-2xl" />
+                        <a className='cursor-pointer' href="https://github.com/enamul90" target={"_blank"}><FaGit className="text-2xl" /></a>
+                        <a className='cursor-pointer' href="https://www.behance.net/mdenamulhossen90" target={"_blank"}><FaBehance className="text-2xl" /></a>
+                        <a className='cursor-pointer' href="https://www.facebook.com/gazienamul.hossain/" target={"_blank"}><TiSocialFacebookCircular className="text-2xl" /></a>
+                        <a className='cursor-pointer' href="https://www.instagram.com/menamulhfiroz90/" target={"_blank"}><FaInstagram className="text-2xl" /></a>
                     </div>
                 </div>
 
